@@ -7,7 +7,7 @@ function Tabs({ currentTab }) {
   const dispatch = useDispatch();
   return TABS.map((tab) => (
     <button
-      style={{ marginTop: "2%" }}
+      style={{ marginTop: "3%" }}
       className={tab === currentTab ? "tab-button selected" : "tab-button"}
       onClick={() => dispatch(toggleTab(tab))}
     >
